@@ -1,0 +1,11 @@
+---
+output:
+  github_document: default
+  html_document: default
+---
+
+## Session Information
+
+```{r sessioninfo, echo=FALSE}
+sessionInfo()
+```

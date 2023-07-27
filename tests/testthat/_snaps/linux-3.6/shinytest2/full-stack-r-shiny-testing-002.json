@@ -1,0 +1,191 @@
+{
+  "input": {
+    "chart-chart_tpe": "Box-Plot",
+    "chart-var": "temperature",
+    "data_preview_cell_clicked": {
+
+    },
+    "data_preview_cells_selected": [
+
+    ],
+    "data_preview_rows_all": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "data_preview_rows_current": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "data_preview_search": "",
+    "data_preview_state": null,
+    "getdataset-dataset": "pressure",
+    "tabs_top_header": "demo_page"
+  },
+  "output": {
+    "chart-chart": {
+      "src": "[image data hash: 1684977ceeb692862faa2212b089b0db]",
+      "width": 454,
+      "height": 450,
+      "alt": "Plot object",
+      "coordmap": {
+        "panels": [
+          {
+            "panel": 1,
+            "row": 1,
+            "col": 1,
+            "panel_vars": {
+
+            },
+            "log": {
+              "x": null,
+              "y": null
+            },
+            "domain": {
+              "left": -18,
+              "right": 378,
+              "bottom": 0.4,
+              "top": 1.6,
+              "discrete_limits": {
+                "y": "X1"
+              }
+            },
+            "mapping": {
+              "x": "rv_chart$data_for_chart[[input$var]]",
+              "y": "\"X1\""
+            },
+            "range": {
+              "left": 35.1506849315069,
+              "right": 448.520547945206,
+              "bottom": 416.849315068493,
+              "top": 23.958904109589
+            }
+          }
+        ],
+        "dims": {
+          "width": 454,
+          "height": 450
+        }
+      }
+    },
+    "data_preview": {
+      "x": {
+        "style": "bootstrap4",
+        "filter": "none",
+        "container": "<table class=\"table\">\n  <thead>\n    <tr>\n      <th>temperature<\/th>\n      <th>pressure<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>",
+        "options": {
+          "dom": "tp",
+          "initComplete": "function(settings, json) {\n$(this.api().table().header()).css({'background-color': '#82a8f4'});\n}",
+          "columnDefs": [
+            {
+              "className": "dt-center",
+              "targets": [
+                0,
+                1
+              ]
+            }
+          ],
+          "order": [
+
+          ],
+          "autoWidth": false,
+          "orderClasses": false,
+          "ajax": {
+            "type": "POST",
+            "data": "function(d) {\nd.search.caseInsensitive = true;\nd.search.smart = true;\nd.escape = true;\nvar encodeAmp = function(x) { x.value = x.value.replace(/&/g, \"%26\"); }\nencodeAmp(d.search);\n$.each(d.columns, function(i, v) {encodeAmp(v.search);});\n}"
+          },
+          "serverSide": true,
+          "processing": true
+        },
+        "selection": {
+          "mode": "single",
+          "selected": null,
+          "target": "cell",
+          "selectable": null
+        }
+      },
+      "evals": [
+        "options.initComplete",
+        "options.ajax.data"
+      ],
+      "jsHooks": [
+
+      ],
+      "deps": [
+        {
+          "name": "dt-core-bootstrap4",
+          "version": "1.10.20",
+          "src": {
+            "href": "dt-core-bootstrap4-1.10.20"
+          },
+          "meta": null,
+          "script": [
+            "js/jquery.dataTables.min.js",
+            "js/dataTables.bootstrap4.min.js"
+          ],
+          "stylesheet": [
+            "css/dataTables.bootstrap4.min.css",
+            "css/dataTables.bootstrap4.extra.css"
+          ],
+          "head": null,
+          "attachment": null,
+          "package": null,
+          "all_files": false
+        },
+        {
+          "name": "jquery",
+          "version": "1.11.3",
+          "src": {
+            "href": "jquery-1.11.3"
+          },
+          "meta": null,
+          "script": "jquery.min.js",
+          "stylesheet": null,
+          "head": null,
+          "attachment": null,
+          "all_files": true
+        },
+        {
+          "name": "crosstalk",
+          "version": "1.1.0.1",
+          "src": {
+            "href": "crosstalk-1.1.0.1"
+          },
+          "meta": null,
+          "script": "js/crosstalk.min.js",
+          "stylesheet": "css/crosstalk.css",
+          "head": null,
+          "attachment": null,
+          "all_files": true
+        }
+      ]
+    }
+  },
+  "export": {
+
+  }
+}

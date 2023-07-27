@@ -1,0 +1,17 @@
+---
+title: "Automated Testing - POC Application"
+author: Sanjeev Kumar Rathore (Author) - 
+date: "`r Sys.Date()`"
+output: github_document
+editor_options: 
+chunk_output_type: console
+---
+
+* **Project Lead:** Mukul Mittal
+* **R Shiny Technical Team Lead:** Mayank Agarwal
+* **R Shiny Developer:** Sanjeev Kumar Rathore
+* **R Shiny Developer:** Ramya Sri Pichikala
+
+
+Usage of `testthat2` and `shinytest` usage and end-to-end steps to follow for a R Shiny project.  
+Go to `documentation` directory to get the more details about automated testing.
